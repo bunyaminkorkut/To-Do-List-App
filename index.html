@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+
+
+
+    <style>
+        .editlist{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .list-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer{
+            width: 100vw;
+            height: 60px;
+        }
+
+
+    </style>
+</head>
+<body style="height: 100vh;">
+    <div class="card mx-5">
+        <div class="card-header fw-bold fs-3">
+          To Do List App
+        </div>
+        <div class="card-header input-group fs-3">
+            <input class="form-control form-control-lg" type="text" id="taskInput" placeholder="Add a Task" >
+            <button onclick="newtask()" class="btn btn-primary px-4"  type="button" id="btn-add">Add</button>
+        </div>
+    </div>
+    <div class="card mx-5 mt-3" style="margin-bottom:30px;">
+        <div class="card-header list-title">
+            
+            <!-- clear -->
+            <div>
+                <button type="button" onclick="clearall()" id="clear" class="btn btn-danger">Clear</button>
+            </div>
+        </div>
+        <div class="" >
+            <!-- task list -->
+            <ul class="list-group list-group-flush" style="font-size: 1.1rem;" id="tasklisthtml">
+                
+            </ul>
+          </div>
+    </div>
+    <div>
+        <h1 style="color: #fff; position:relative; right: 50px">..</h1>
+    </div>
+    <footer class="text-bg-primary position-fixed bottom-0">
+        <div class="d-flex mx-auto justify-content-center h-100 align-items-center align-items-end"><h1 class="h3">Designed by Bunyamin Korkut</h1></div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+
+</body>
+</html>
